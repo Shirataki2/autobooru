@@ -1,0 +1,23 @@
+[package]
+name = "autobooru"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.65"
+chrono = { version = "0.4.22", features = ["serde"] }
+convert_case = "0.6.0"
+dotenv = "0.15.0"
+env_logger = "0.9.1"
+futures = "0.3.25"
+log = "0.4.17"
+maplit = "1.0.2"
+poise = "0.4.1"
+reqwest = { version = "0.11.12", features = ["json", "gzip"] }
+serde = { version = "1.0.145", features = ["derive"] }
+serde_json = "1.0.86"
+sqlx = { version = "0.6.2", features = ["runtime-tokio-native-tls", "postgres"] }
+thiserror = "1.0.37"
+tokio = { version = "1.21.2", features = ["full"] }
